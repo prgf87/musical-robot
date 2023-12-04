@@ -1,12 +1,8 @@
 <template>
-  <q-page padding>
-    <q-select
-      label="Please choose one"
-      outlined
-      :options="options"
-      v-model="model"
-    ></q-select>
-    <!-- borderless is also an option for grid stuff or custom css -->
+  <q-page class="row">
+    <div class="bg-blue col-3"></div>
+    <div class="bg-orange col-3"></div>
+    <div class="bg-red col-6"></div>
   </q-page>
 </template>
 
