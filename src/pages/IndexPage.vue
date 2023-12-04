@@ -3,8 +3,8 @@
     <q-card class="col-xs-9">
       <q-toolbar>
         <q-input
+          dense
           class="full-width"
-          borderless
           placeholder="Search"
           :model-value="search"
         >
@@ -12,6 +12,7 @@
         </q-input>
       </q-toolbar>
       <q-list>
+        <h6 class="p">My ToDo's</h6>
         <q-item>
           <q-item-section side>
             <q-checkbox :model-value="true" />
@@ -23,6 +24,11 @@
         </q-item>
       </q-list>
     </q-card>
+    <div class="col-xs-3">
+      <q-toolbar class="bg-primary">
+        <q-btn icon="mdi-plus" fab color="secondary" class="fab-btn q-ml-lg" />
+      </q-toolbar>
+    </div>
   </q-page>
 </template>
 
@@ -46,5 +52,8 @@ const options: string[] = [
 .btn {
   background-color: blue;
   color: white;
+}
+.fab-btn {
+  margin-bottom: -50px;
 }
 </style>
