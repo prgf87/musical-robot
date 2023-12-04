@@ -10,11 +10,7 @@
         quas.
       </q-card-section>
     </q-card> -->
-    <q-select
-      filled
-      :options="['Hill', 'Billy', 'Bob', 'Trevor', 'Jerry', 'Marvin', 'Melvin']"
-      v-model="selected"
-    ></q-select>
+    <q-select filled :options="options" v-model="model"></q-select>
     <!-- <example-component
       title="Example component"
       active
@@ -55,6 +51,16 @@ const meta = ref<Meta>({
 });
 
 let selected: string | null = null;
+const model: any = ref(null);
+const options: string[] = [
+  "Hill",
+  "Billy",
+  "Bob",
+  "Trevor",
+  "Jerry",
+  "Marvin",
+  "Melvin",
+];
 </script>
 
 <style>
