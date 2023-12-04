@@ -12,7 +12,6 @@
         </q-input>
       </q-toolbar>
       <q-list>
-        <h6 class="p">My ToDo's</h6>
         <q-item>
           <q-item-section side>
             <q-checkbox :model-value="true" />
