@@ -1,3 +1,5 @@
+/*@es-lint ignore-file*/
+
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": [
