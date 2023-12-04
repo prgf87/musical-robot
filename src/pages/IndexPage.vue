@@ -1,56 +1,18 @@
 <template>
   <q-page padding>
-    <!-- <q-btn color="blue-10">Click Me</q-btn> -->
-    <!-- <q-card style="width: 350px">
-      <q-card-section class="bg-blue text-white"> My Card </q-card-section>
-      <q-card-section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        magni est itaque veniam nihil dignissimos, distinctio deleniti corporis
-        veritatis provident, nostrum esse, rerum in ipsam rem numquam ea sint
-        quas.
-      </q-card-section>
-    </q-card> -->
-    <q-select filled :options="options" v-model="model"></q-select>
-    <!-- <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component> -->
+    <q-select
+      label="Please choose one"
+      outlined
+      :options="options"
+      v-model="model"
+    ></q-select>
+    <!-- borderless is also an option for grid stuff or custom css -->
   </q-page>
 </template>
 
 <script setup lang="ts">
-import { Todo, Meta } from "components/models";
 import { ref } from "vue";
 
-const todos = ref<Todo[]>([
-  {
-    id: 1,
-    content: "ct1",
-  },
-  {
-    id: 2,
-    content: "ct2",
-  },
-  {
-    id: 3,
-    content: "ct3",
-  },
-  {
-    id: 4,
-    content: "ct4",
-  },
-  {
-    id: 5,
-    content: "ct5",
-  },
-]);
-const meta = ref<Meta>({
-  totalCount: 1200,
-});
-
-let selected: string | null = null;
 const model: any = ref(null);
 const options: string[] = [
   "Hill",
