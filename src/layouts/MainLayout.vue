@@ -25,7 +25,7 @@
         </q-item>
         <q-item clickable>
           <q-item-section side>
-            <q-icon name="mdi-shopping"></q-icon>
+            <q-icon name="mdi-shopping" color="blue-3"></q-icon>
           </q-item-section>
           <q-item-section> Shopping List </q-item-section>
           <q-item-section side> 12 </q-item-section>
