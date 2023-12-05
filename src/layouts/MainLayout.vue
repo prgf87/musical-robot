@@ -14,7 +14,12 @@
         <q-btn icon="mdi-logout" flat round dense></q-btn>
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer
+      v-model="leftDrawerOpen"
+      show-if-above
+      bordered
+      class="text-grey-7"
+    >
       <q-list>
         <q-toolbar class="bg-primary"></q-toolbar>
         <q-item class="bg-grey-3">
@@ -25,7 +30,7 @@
         </q-item>
         <q-item clickable>
           <q-item-section side>
-            <q-icon name="mdi-shopping" color="blue-3"></q-icon>
+            <q-icon name="mdi-shopping" color="blue-13"></q-icon>
           </q-item-section>
           <q-item-section> Shopping List </q-item-section>
           <q-item-section side> 12 </q-item-section>
