@@ -11,27 +11,24 @@
           <template #append> <q-icon name="mdi-magnify" /> </template>
         </q-input>
       </q-toolbar>
-      <q-list>
-        <q-item>
-          <q-item-section side>
-            <q-checkbox :model-value="true" />
-          </q-item-section>
-          <q-item-section> Go Shopping </q-item-section>
-          <q-item-section side>
-            <q-btn icon="mdi-delete" flat round size="md" color="red"> </q-btn>
-          </q-item-section>
-        </q-item>
-      </q-list>
+      <TodosList />
     </q-card>
     <div class="col-xs-3">
       <q-toolbar class="bg-primary">
-        <q-btn icon="mdi-plus" fab color="secondary" class="fab-btn q-ml-lg" />
+        <TodoButton
+          icon="mdi-plus"
+          fab
+          color="secondary"
+          class="fab-btn q-ml-lg"
+        />
       </q-toolbar>
     </div>
   </q-page>
 </template>
 
 <script setup lang="ts">
+import TodoButton from "src/components/TodoButton.vue";
+import TodosList from "src/components/TodosList.vue";
 import { ref } from "vue";
 
 let search = "";
